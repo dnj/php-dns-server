@@ -1,12 +1,12 @@
 {
 	"name": "dnj/dns-server",
-	"license": "",
+	"license": "MIT",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
 		"php": "^8.1",
 		"ext-openswoole": "*",
-		"badcow/dns": "@dev",
+		"badcow/dns": "dev-support-edns",
 		"psr/log": "^1.0 || ^2.0 || ^3.0",
 		"illuminate/container": "^8.80",
 		"dnj/log": "^1.1",
@@ -22,12 +22,6 @@
 			"dnj\\DnsServer\\": "src/"
 		}
 	},
-	"repositories": [
-		{
-			"type": "path",
-			"url": "/home/composer/yeganemehr/DNS"
-		}
-	],
 	"scripts": {
 		"test:types": "vendor/bin/phpstan analyze",
 		"test:phpunit": "vendor/bin/phpunit",
